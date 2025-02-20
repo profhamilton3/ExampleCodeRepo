@@ -9,3 +9,4 @@ Express steps for sharing and collabortion.
 Branches and committing
 ### Body 03: Coding inside GitHub
 ### Body 04: Testing inside Github
+Automated Workflow built into GitHub.  This branch has a workflow script.  We will test it fully before merging back to main.

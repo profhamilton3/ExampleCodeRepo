@@ -8,5 +8,5 @@ def test_dataset( ):
     }
     myvar = pd.DataFrame(mydataset)
     print("Pandas DataFrame")
-    assert( myvar )
+    assert( myvar.empty == False )
     print(myvar) 

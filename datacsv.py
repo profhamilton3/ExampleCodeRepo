@@ -10,14 +10,18 @@ class DataCsv:
             "duration": [50, 40, 45]
         }
         self.df = pd.DataFrame(data)
-        self.datacsv = none
-        print("INIT DATA FRAME:", df)
+        self.datacsv = None
+        print("INIT DATA FRAME:", self.df)
 
     def get_df(self):
         return self.df
 
+    def set_df(self, newDF):
+        self.df = isinstance(newDF,type(self.df)  : newDF? self.df
+        
+
     def load_datacsv(self):
-        if self.datacsv is none :
+        if self.datacsv is None :
             self.datacsv = pandas.read_csv('./data.csv')
         return self.datacsv
 

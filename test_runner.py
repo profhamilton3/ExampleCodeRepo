@@ -14,7 +14,7 @@ def df_data():
     
 
 def test_one(df_data):
-  assert False = dataframe
+  assert False == df_data
 
 
 def test_two():
@@ -22,4 +22,7 @@ def test_two():
   assert False == s1.empty
   print(s1)
 
+def test_three(df_data):
+    assert False == df_data
+    print(df_data)
 

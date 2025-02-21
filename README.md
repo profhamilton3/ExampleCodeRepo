@@ -19,3 +19,4 @@ Defining a series with a dictionary.  The "keys" become the indexes.
 Data sets in Pandas are usually multi-dimensional tables, called DataFrames.
 Series is like a column, a DataFrame is the whole table. The tests exercise creatign dataframe and series objects.
 
+Next up I will create a code file to explore loading csv and testing the files.

@@ -13,14 +13,17 @@ def df_data():
     return dataframe
 
 def test_one(df_data):
+    print(df_data)
     assert False == (df_data).empty
 
 def test_two():
     s1 = pandas.Series([0, 1, 2, 4, 5, 6, 2])
-    assert False == s1.empty
     print(s1)
+    assert False == s1.empty
+    
 
 def test_three(df_data):
-    assert False == (df_data).empty
-    print(df_data)
+    print((df_data).[0])
+    assert False == (df_data).[0].empty
+    
 

@@ -4,9 +4,16 @@ import pandas as pd
 def test_dataset( ):
     mydataset  = {
         'cars': ["BMW", "Volvo", "Ford", "Toyota", "Hyundai", "Daiwu"],
-        'passings': [3, 7, 2, 9,6,2]
+        'passings': [3, 7, 2, 9, 6, 2]
     }
     myvar = pd.DataFrame(mydataset)
     print("Pandas DataFrame")
     assert( myvar.empty == False )
     print(myvar) 
+
+def dataframe_test():
+    a = [1, 7, 2, 12, 5, 3]
+    myvar = pd.Series(a, index = ["x", "y", "z", "a", "b", "c"])
+    assert myvar.empty == False
+    print(myvar)
+    

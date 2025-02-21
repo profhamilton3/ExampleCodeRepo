@@ -1,17 +1,18 @@
-# datacsv.py
-# upload a sample csv files
+""" datacsv.py
+    upload a sample csv files sourced from w3schools.org 
+"""
 import pandas as pd
 
 class DataCsv:
     def __init__(self):
     	data = {
     		"calories": [420, 380, 390],
-  			"duration": [50, 40, 45]
+  		"duration": [50, 40, 45]
         	}
-		#load data into a DataFrame object:
-		self.df = pd.DataFrame(data)
+	#load data into a DataFrame object:
+	self.df = pd.DataFrame(data)
         self.datacsv = none
-		print("INIT DATA FRAME:", df)
+	print("INIT DATA FRAME:", df)
     
     def get_df(self):
         return self.df

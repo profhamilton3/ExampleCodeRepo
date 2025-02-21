@@ -7,14 +7,15 @@ import pandas
 @pytest.fixture
 def df_data():
     ds = {
-        'cars': ["BMW", "Volvo", "Ford","Toyota", "Hyunda", "Cheverolete","Oldsmobile","Pontiac","Buick"],
-        'passings': [3, 7, 2, 6, 5, 3, 4, 8,4]
+        'cars': ["BMW", "Volvo", "Ford", "Toyota", "Hyunda", "Cheverolete", "Oldsmobile", "Pontiac", "Buick"],
+        'passings': [3, 7, 2, 6, 5, 3, 4, 8, 4]
     }
-    return pandas.DataFrame(ds)
+    dataframe = pandas.DataFrame(ds)
+    return dataframe
     
 
 def test_one(df_data):
-  assert False == df_data
+  assert False == (df_data).empty
 
 
 def test_two():
@@ -23,6 +24,6 @@ def test_two():
   print(s1)
 
 def test_three(df_data):
-    assert False == df_data
+    assert False == (df_data).empty
     print(df_data)
 

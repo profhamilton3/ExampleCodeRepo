@@ -17,7 +17,9 @@ class DataCsv:
         return self.df
 
     def set_df(self, newDF):
-        self.df = isinstance(newDF,type(self.df)  : newDF? self.df
+        if isinstance(newDF,pandas.DataFrame) :
+            del self.df
+            self.df = newDF
         
 
     def load_datacsv(self):

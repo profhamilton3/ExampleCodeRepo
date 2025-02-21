@@ -1,8 +1,7 @@
-#test_runner.py - pytest will run this automatically
-#we will list it explicitely in the yml file just in case
+# test_runner.py - pytest will run this automatically
+# we will list it explicitely in the yml file just in case
 import pytest
 import pandas
-
 
 @pytest.fixture
 def df_data():
@@ -12,16 +11,14 @@ def df_data():
     }
     dataframe = pandas.DataFrame(ds)
     return dataframe
-    
 
 def test_one(df_data):
-  assert False == (df_data).empty
-
+    assert False == (df_data).empty
 
 def test_two():
-  s1 = pandas.Series([0,1,2,4,5,6,2])
-  assert False == s1.empty
-  print(s1)
+    s1 = pandas.Series([0, 1, 2, 4, 5, 6, 2])
+    assert False == s1.empty
+    print(s1)
 
 def test_three(df_data):
     assert False == (df_data).empty

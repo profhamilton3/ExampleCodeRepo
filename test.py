@@ -16,8 +16,8 @@ def dataseries_toframe_test():
     b = [3, 3, 2, 2, 5, 3]
     mya = pd.Series(a, index = ["x", "y", "z", "a", "b", "c"])
     myb = pd.Series(b, index = ["x", "y", "z", "a", "b", "c"])
-    assert myva.empty == False
-    assert myva.empty == False
+    assert mya.empty == False
+    assert myb.empty == False
     print(mya)
     print(myb)
     df = pd.DataFrame({mya,myb})

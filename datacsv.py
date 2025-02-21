@@ -17,14 +17,14 @@ class DataCsv:
         return self.df
 
     def set_df(self, newDF):
-        if isinstance(newDF,pandas.DataFrame) :
+        if isinstance(newDF,pd.DataFrame) :
             del self.df
             self.df = newDF
         
 
     def load_datacsv(self):
         if self.datacsv is None :
-            self.datacsv = pandas.read_csv('./data.csv')
+            self.datacsv = pd.read_csv('./data.csv')
         return self.datacsv
 
     def get_datacsv(self):

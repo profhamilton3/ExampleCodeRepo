@@ -11,7 +11,7 @@ def test_dataset():
     assert myvar.empty == False
     print(myvar) 
 
-def dataseries_toframe_test():
+def test_dataseries_toframe():
     a = [1, 7, 2, 12, 5, 3]
     b = [3, 3, 2, 2, 5, 3]
     mya = pd.Series(a, index = ["x", "y", "z", "a", "b", "c"])

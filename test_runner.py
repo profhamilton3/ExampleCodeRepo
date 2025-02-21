@@ -7,6 +7,6 @@ def test_one():
 
 
 def test_two():
-  s1 = pandas.Sequence([0,1,2,4,5,6,2])
+  s1 = pandas.Series([0,1,2,4,5,6,2])
   assert False == s1.empty
   print(s1)

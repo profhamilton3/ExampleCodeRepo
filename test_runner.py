@@ -23,7 +23,7 @@ def test_two():
     
 
 def test_three(df_data):
-    print((df_data).[0])
-    assert False == (df_data).[0].empty
+    print((df_data).loc[0])
+    assert False == (df_data).loc[0].empty
     
 

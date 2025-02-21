@@ -7,8 +7,8 @@ import pandas
 @pytest.fixture
 def df_data():
     ds = {
-        'cars': ["BMW", "Volvo", "Ford","Toyota", "Hyunda", "Cheverolete"],
-        'passings': [3, 7, 2, 6, 5]
+        'cars': ["BMW", "Volvo", "Ford","Toyota", "Hyunda", "Cheverolete","Oldsmobile","Pontiac","Buick"],
+        'passings': [3, 7, 2, 6, 5, 3, 4, 8,4]
     }
     return pandas.DataFrame(ds)
     

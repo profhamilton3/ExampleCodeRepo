@@ -10,7 +10,6 @@ def test_dataset():
     print("Pandas DataFrame")
     print(myvar) 
     assert myvar.empty == False
-    
 
 def test_dataseries_toframe():
     a = [1, 7, 2, 12, 5, 3]
@@ -24,6 +23,3 @@ def test_dataseries_toframe():
     assert mya.empty == False
     assert myb.empty == False
     assert df.empty == False
-   
-
-

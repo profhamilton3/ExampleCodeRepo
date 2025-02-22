@@ -1,4 +1,4 @@
-""" datacsv.py
+"" datacsv.py
     upload a sample csv files sourced from w3schools.org 
 """
 import pandas as pd
@@ -10,7 +10,7 @@ class DataCsv:
             "duration": [50, 40, 45]
         }
         self.df = pd.DataFrame(data)
-        self.datacsv = None
+        self.datacsv = pd.DataFrame() #intentionally empty
         print("INIT DATA FRAME:", self.df)
 
     def get_df(self):
@@ -23,9 +23,8 @@ class DataCsv:
         
 
     def load_datacsv(self):
-        if self.datacsv is None :
-            self.datacsv = pd.read_csv('./data.csv')
+        self.datacsv = pd.read_csv('./data.csv')
         return self.datacsv
 
     def get_datacsv(self):
-        return self.loadcsv(self)
+        return self.datacsv

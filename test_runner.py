@@ -29,7 +29,7 @@ def test_three(df_data):
 
 def test_datacsv():
     dcsv = datacsv.DataCsv()
-    assert False == dcsv.empty
+    assert True == dcsv.get_datacsv().empty
 
 def test_datacsv_get_df():
     dcsv = datacsv.DataCsv()

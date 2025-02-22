@@ -4,7 +4,7 @@
 import pandas as pd
 
 class DataCsv:
-    def _init__(self):
+    def __init__(self):
         data = {
             "calories": [420, 380, 390],
             "duration": [50, 40, 45]
@@ -23,7 +23,7 @@ class DataCsv:
         
 
     def load_datacsv(self):
-        self.datacsv = pd.read_csv('./data.csv')
+        self._datacsv = pd.read_csv('./data.csv')
         return self.datacsv
 
     def get_datacsv(self):

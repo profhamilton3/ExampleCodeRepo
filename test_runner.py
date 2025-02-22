@@ -2,6 +2,7 @@
 # we will list it explicitely in the yml file just in case
 import pytest
 import pandas
+import datacsv
 
 @pytest.fixture
 def df_data():
@@ -25,5 +26,22 @@ def test_two():
 def test_three(df_data):
     print((df_data).loc[0])
     assert False == (df_data).loc[0].empty
-    
 
+def test_datacsv():
+    dcsv = datacsv.DataCsv()
+    assert False == dcsv.empty
+
+def test_datacsv_get_df():
+    dcsv = datacsv.DataCsv()
+    df = dcsv.get_df()
+    assert False == df.empty
+
+def test_datecsv_load_datacsv():
+    dcsv = datacsv.DataCsv()
+    df = dcsv.load_datacsv()
+    assert False == df.empty
+
+def test_datecsv_get_datacsv():
+    dcsv = datacsv.DataCsv()
+    df = dcsv.get_datacsv()
+    assert False == df.empty

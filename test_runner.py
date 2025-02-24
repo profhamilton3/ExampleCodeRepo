@@ -36,12 +36,14 @@ def test_datacsv_get_df():
     df = dcsv.get_df()
     assert False == df.empty
 
-def test_datecsv_load_datacsv():
-    dcsv = datacsv.DataCsv()
-    df = dcsv.load_datacsv()
-    assert False == df.empty
+def test_readcsv():
+    d = pandas.read_csv('./data.csv')
+    assert False == d.empty
 
-def test_datecsv_get_datacsv():
+def test_datacsv_set_get_datacsv():
+    data = pandas.read_csv('./data.csv')
+    assert False == data.empty
     dcsv = datacsv.DataCsv()
+    dcsv.set_datacsv(data)
     df = dcsv.get_datacsv()
     assert False == df.empty

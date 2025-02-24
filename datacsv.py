@@ -20,11 +20,11 @@ class DataCsv:
         if isinstance(newDF,pd.DataFrame) :
             del self.df
             self.df = newDF
-        
-
-    def load_datacsv(self):
-        self._datacsv = pd.read_csv('./data.csv')
-        return self.datacsv
+ 
+    def set_datacsv(self, data):
+        if isinstance(data, pd.DataFrame):
+            del self.datacsv
+            self.datacsv = data
 
     def get_datacsv(self):
         return self.datacsv

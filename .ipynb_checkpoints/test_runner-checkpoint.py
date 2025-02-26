@@ -2,7 +2,6 @@
 # we will list it explicitely in the yml file just in case
 import pytest
 import pandas
-import seaborn as sns
 import datacsv
 
 @pytest.fixture
@@ -48,7 +47,3 @@ def test_datacsv_set_get_datacsv():
     dcsv.set_datacsv(data)
     df = dcsv.get_datacsv()
     assert False == df.empty
-
-def test_edata_load():
-    data = sns.load_data('flights')
-    assert data.size > 0

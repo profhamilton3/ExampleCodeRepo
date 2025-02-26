@@ -20,3 +20,6 @@ Data sets in Pandas are usually multi-dimensional tables, called DataFrames.
 Series is like a column, a DataFrame is the whole table. The tests exercise creatign dataframe and series objects.
 
 Next up I will create a code file to explore loading csv and testing the files.  The class DataCsv was created in file datacsv.py it will be capable of creating dataframes from cvs files as well as dictionary(json) objects.
+
+### Body 06: Codespaces
+once created, codespaces files can be pulled into a branch and merged into main

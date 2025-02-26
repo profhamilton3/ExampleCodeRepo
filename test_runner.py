@@ -16,38 +16,38 @@ def df_data():
 
 def test_one(df_data):
     print(df_data)
-    assert False == (df_data).empty
+    assert (df_data).size > 0
 
 def test_two():
     s1 = pandas.Series([0, 1, 2, 4, 5, 6, 2])
     print(s1)
-    assert False == s1.empty
+    assert s1.size > 0
     
 
 def test_three(df_data):
     print((df_data).loc[0])
-    assert False == (df_data).loc[0].empty
+    assert (df_data).loc[0].size > 0
 
 def test_datacsv():
     dcsv = datacsv.DataCsv()
-    assert True == dcsv.get_datacsv().empty
+    assert 0 == dcsv.get_datacsv().size
 
 def test_datacsv_get_df():
     dcsv = datacsv.DataCsv()
     df = dcsv.get_df()
-    assert False == df.empty
+    assert df.size > 0
 
 def test_readcsv():
     d = pandas.read_csv('./data.csv')
-    assert False == d.empty
+    assert d.size > 0
 
 def test_datacsv_set_get_datacsv():
     data = pandas.read_csv('./data.csv')
-    assert False == data.empty
+    assert data.size > 0
     dcsv = datacsv.DataCsv()
     dcsv.set_datacsv(data)
     df = dcsv.get_datacsv()
-    assert False == df.empty
+    assert df.size > 0
 
 def test_edata_load():
     data = sns.load_data('flights')

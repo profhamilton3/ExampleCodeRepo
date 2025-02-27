@@ -1,4 +1,4 @@
-import seaborn as sns  #  pandas as pd - is not used but DataFrames are created.
+import seaborn as sns  # pandas as pd - is not used but DataFrames are created.
 import numpy as np
 import matplotlib.pyplot as plt
 

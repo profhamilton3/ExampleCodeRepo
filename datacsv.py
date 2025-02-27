@@ -3,8 +3,8 @@
 """
 import pandas as pd
 
+
 class DataCsv:
-    
     def __init__(self):
         data = {
             "calories": [420, 380, 390],

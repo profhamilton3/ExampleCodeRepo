@@ -1,5 +1,4 @@
-import seaborn as sns
-import pandas as pd
+import seaborn as sns  #  pandas as pd - is not used but DataFrames are created.
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -19,9 +18,11 @@ sns.barplot(x=avg_tip_pct_by_day.index, y=avg_tip_pct_by_day.values)
 plt.title('Average Tip Percentage by Day')
 plt.show()
 
+
 def test_tips_load():
     tips = sns.load_dataset('tips')
     assert tips.size > 0
+
 
 def test_np_access():
     tips = sns.load_dataset('tips')
